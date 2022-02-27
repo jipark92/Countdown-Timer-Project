@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+* {
+    background-color:#E0F2FE;
+}
+
+h1 {
+    font-family: 'Shizuru', cursive;
+    text-align : center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 50px;
+    padding: 5rem;
+}
+
+.img-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.about-container {
+    padding: 25px;
+    border: 1px solid black;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+@media (max-width: 800px) {
+    .about-container {
+        padding: 25px;
+        border: 1px solid black;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
