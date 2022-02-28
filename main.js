@@ -84,7 +84,9 @@ function countDownProject() {
 
         const values = [days, hours, minutes, seconds];
         console.log(values);
+        // grabbed this formula from google search
 
+        
         displayDays.textContent = values[0];
         displayHours.textContent = values[1];
         displayMins.textContent = values[2];
