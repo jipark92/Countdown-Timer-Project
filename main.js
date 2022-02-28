@@ -43,13 +43,36 @@ function countDownProject() {
     getFutureDates();
 
 
-    let day = 34;
-    let hour = 5;
-    let min = 15;
-    let sec = 34;
-
-
-
+    const displayDays = document.querySelector('.days');
     
+   
+    let futureDates = new Date(2022, 5, 12, 5, 30,0);
+    const futureTime = futureDates.getTime();
+    console.log(futureTime);
+
+    function getRemainingTime(){
+        const today = new Date().getTime();
+        console.log(today);
+
+        const t = futureTime - today;
+        console.log(t);
+
+        const oneDay = 24 * 60 * 60 * 1000;
+        const oneHour = 60 * 60 * 1000;
+        const oneMinute = 60 * 1000;
+        console.log(oneDay);
+        console.log(oneHour);
+        console.log(oneMinute);
+
+        let days = t/oneDay;
+        console.log(days);
+        days = Math.floor(days);
+        console.log(days);
+        let hours = (t % oneDay) / oneHour;
+        console.log(hours);
+    
+    }
+    getRemainingTime();
+
 }
 countDownProject()
