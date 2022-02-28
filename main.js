@@ -59,7 +59,7 @@ function countDownProject() {
 
         const t = futureTime - today;
         console.log(t);
-
+        // grabbed this formula from google search
         const oneDay = 24 * 60 * 60 * 1000;
         const oneHour = 60 * 60 * 1000;
         const oneMinute = 60 * 1000;
