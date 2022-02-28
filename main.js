@@ -26,17 +26,14 @@ const days = [
 const giveawayTime = document.querySelector('.giveaway');
 const countdownTime = document.querySelectorAll('.countdown');
 
-const date = new Date();
 
-console.log(date);
+let futureDate = new Date(2020, 4, 24, 11, 30,0);
 
-const month = date.getMonth();
+let futureDateString = futureDate.toString();
 
-console.log(`today month is ${months[month]}`);
+let newFutureDateString = futureDateString.slice(0, -32);
 
+giveawayTime.textContent += newFutureDateString;
 
-const day = date.getDay();
-
-console.log(days[day]);
 
 
